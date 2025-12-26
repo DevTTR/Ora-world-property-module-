@@ -1,0 +1,810 @@
+/* ==========================================================================
+   LUXURY REAL ESTATE - WARM TAUPE MINIMAL DESIGN
+   Paleta: Warm Taupe (#8B7355) + Crema + Grises neutros
+   Diseño super limpio y profesional
+   ========================================================================== */
+
+   @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap');
+   @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
+   
+   /* Variables de color - Basadas en el prototipo exacto */
+   .h3BreqRip5vgBRyV1wRf {
+       --color-taupe: #8B7355;
+       --color-taupe-dark: #6B5745;
+       --color-white: #FFFFFF;
+       --color-gray-50: #F9FAFB;
+       --color-gray-100: #F3F4F6;
+       --color-gray-200: #E5E7EB;
+       --color-gray-300: #D1D5DB;
+       --color-gray-700: #374151;
+       --color-gray-900: #111827;
+       --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+       --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+       --shadow-lg: 0 10px 20px rgba(0, 0, 0, 0.1);
+       --radius: 8px;
+   }
+   
+   /* ==========================================================================
+      PARTE 1: SIDEBAR Y NAVEGACIÓN GLOBAL
+      ========================================================================== */
+   
+   .h3BreqRip5vgBRyV1wRf div.flex.flex-col.flex-grow.h-screen.pt-3.pb-2.overflow-hidden.lead-connector {
+       background-color: var(--color-white) !important;
+   }
+   
+   /* Logo personalizado */
+   .h3BreqRip5vgBRyV1wRf img.object-contain.agency-logo {
+       content: url('https://storage.googleapis.com/msgsndr/h3BreqRip5vgBRyV1wRf/media/691d2a1d6d309e9d8d253325.svg') !important;
+   }
+   
+   /* Tipografía del sidebar */
+   .h3BreqRip5vgBRyV1wRf span.hl_text-overflow.sm\:hidden.md\:hidden.nav-title.lg\:block.xl\:block {
+       font-family: 'DM Sans', sans-serif !important;
+       color: var(--color-gray-900) !important;
+   }
+   
+   /* Links del sidebar - Estado normal */
+   .h3BreqRip5vgBRyV1wRf #sidebar-v2 a {
+       transition: all 0.2s ease !important;
+       border-radius: 6px !important;
+   }
+   
+   /* Iconos en estado normal - gris */
+   .h3BreqRip5vgBRyV1wRf #sidebar-v2 a img.md\:mr-0.h-5.w-5.mr-2.lg\:mr-2.xl\:mr-2 {
+       filter: grayscale(100%) brightness(60%) !important;
+       opacity: 0.6 !important;
+   }
+   
+   .h3BreqRip5vgBRyV1wRf #sidebar-v2 a span.h-5.w-5.text-gray-300.custom-svg.mr-2 svg path {
+       fill: #9ca3af !important;
+       stroke: #9ca3af !important;
+   }
+   
+   /* Estado ACTIVO - Warm Taupe */
+   .h3BreqRip5vgBRyV1wRf #sidebar-v2 a.active {
+       background-color: var(--color-taupe) !important;
+       color: var(--color-white) !important;
+       opacity: 1 !important;
+   }
+   
+   .h3BreqRip5vgBRyV1wRf #sidebar-v2 a.active span.nav-title {
+       color: var(--color-white) !important;
+   }
+   
+   .h3BreqRip5vgBRyV1wRf #sidebar-v2 a.active img.md\:mr-0.h-5.w-5.mr-2.lg\:mr-2.xl\:mr-2 {
+       filter: brightness(0) invert(1) !important;
+       opacity: 1 !important;
+   }
+   
+   .h3BreqRip5vgBRyV1wRf #sidebar-v2 a.active span.h-5.w-5.text-gray-300.custom-svg.mr-2 svg path {
+       fill: var(--color-white) !important;
+       stroke: var(--color-white) !important;
+   }
+   
+   /* Estado HOVER - Warm Taupe */
+   .h3BreqRip5vgBRyV1wRf #sidebar-v2 a:hover {
+       background-color: var(--color-taupe) !important;
+       color: var(--color-white) !important;
+       opacity: 1 !important;
+       transform: translateX(4px) !important;
+   }
+   
+   .h3BreqRip5vgBRyV1wRf #sidebar-v2 a:hover span.nav-title {
+       color: var(--color-white) !important;
+   }
+   
+   .h3BreqRip5vgBRyV1wRf #sidebar-v2 a:hover img.md\:mr-0.h-5.w-5.mr-2.lg\:mr-2.xl\:mr-2 {
+       filter: brightness(0) invert(1) !important;
+       opacity: 1 !important;
+   }
+   
+   .h3BreqRip5vgBRyV1wRf #sidebar-v2 a:hover span.h-5.w-5.text-gray-300.custom-svg.mr-2 svg path {
+       fill: var(--color-white) !important;
+       stroke: var(--color-white) !important;
+   }
+   
+   /* Location Switcher */
+   .h3BreqRip5vgBRyV1wRf #sidebar-v2 #location-switcher-sidbar-v2 {
+       background-color: var(--color-gray-100) !important;
+       display: flex !important;
+       align-items: center !important;
+       padding: 8px 12px !important;
+   }
+   
+   .h3BreqRip5vgBRyV1wRf #sidebar-v2 #location-switcher-sidbar-v2 span.justify-center.hl_text-overflow.hl_switcher-loc-city.font-small {
+       color: var(--color-gray-700) !important;
+       opacity: 1 !important;
+   }
+   
+   .h3BreqRip5vgBRyV1wRf #sidebar-v2 #location-switcher-sidbar-v2 span {
+       color: var(--color-gray-900) !important;
+   }
+   
+   .h3BreqRip5vgBRyV1wRf #sidebar-v2 #location-switcher-sidbar-v2 i.fas.fa-angle-down,
+   .h3BreqRip5vgBRyV1wRf #sidebar-v2 #location-switcher-sidbar-v2 i.fas.fa-angle-up {
+       opacity: 1 !important;
+       color: var(--color-gray-700) !important;
+       font-size: 14px !important;
+   }
+   
+   /* Icono de la subcuenta (logo/avatar) */
+   .h3BreqRip5vgBRyV1wRf #sidebar-v2 #location-switcher-sidbar-v2 img,
+   .h3BreqRip5vgBRyV1wRf #sidebar-v2 #location-switcher-sidbar-v2 .avatar {
+       width: 32px !important;
+       height: 32px !important;
+       border-radius: 4px !important;
+       object-fit: cover !important;
+       margin-right: 8px !important;
+   }
+   
+   /* Buscador global */
+   .h3BreqRip5vgBRyV1wRf div#globalSearchOpener {
+       background-color: var(--color-gray-100) !important;
+   }
+   
+   /* Quick Actions */
+   .h3BreqRip5vgBRyV1wRf div#quickActions {
+       background-color: var(--color-gray-900) !important;
+   }
+   
+   /* ==========================================================================
+      PARTE 2: CONVERTIR TABLA A CARDS (GRID) - SOLO EN PROPERTIES
+      ========================================================================== */
+   
+   /* Header de tabla (SOLO en Properties) */
+   .h3BreqRip5vgBRyV1wRf.properties-module-active .tabulator-header {
+       display: none !important;
+   }
+   
+   /* Contenedor tabla → Grid (SOLO cuando hay clase properties-module-active) */
+   .h3BreqRip5vgBRyV1wRf.properties-module-active .tabulator {
+       background-color: transparent !important;
+       border: none !important;
+       box-shadow: none !important;
+       font-family: 'DM Sans', sans-serif !important;
+   }
+   
+   /* OCULTAR tabla nativa pero mantenerla funcional (SOLO en Properties) */
+   .h3BreqRip5vgBRyV1wRf.properties-module-active .tabulator-table {
+       display: none !important;
+   }
+   
+   /* GRID para cards (inyectado por JS) - SOLO en Properties */
+   .h3BreqRip5vgBRyV1wRf.properties-module-active .properties-grid {
+       display: grid !important;
+       grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)) !important;
+       gap: 24px !important;
+       padding: 20px !important;
+       background: #ffffff !important;
+   }
+   
+   /* Table holder (SOLO en Properties) */
+   .h3BreqRip5vgBRyV1wRf.properties-module-active .tabulator-tableHolder {
+       overflow-y: auto !important;
+       max-height: calc(100vh - 250px) !important;
+   }
+   
+   /* Card generada por JS (SOLO en Properties) */
+   .h3BreqRip5vgBRyV1wRf.properties-module-active .property-card {
+       display: flex !important;
+       flex-direction: column !important;
+       background-color: var(--color-white) !important;
+       border: 1px solid var(--color-gray-200) !important;
+       border-radius: var(--radius) !important;
+       overflow: hidden !important;
+       box-shadow: var(--shadow-sm) !important;
+       transition: all 0.2s ease !important;
+       height: auto !important;
+       min-height: 400px !important;
+   }
+   
+   .h3BreqRip5vgBRyV1wRf.properties-module-active .property-card:hover {
+       box-shadow: var(--shadow-lg) !important;
+       transform: translateY(-4px) !important;
+   }
+   
+   .h3BreqRip5vgBRyV1wRf.properties-module-active .property-card > div {
+       display: block !important;
+       border: none !important;
+       background: transparent !important;
+   }
+   
+   /* Imagen superior - FLOOR PLAN (SOLO en Properties) */
+   .h3BreqRip5vgBRyV1wRf.properties-module-active .card-image {
+       width: 100% !important;
+       height: 280px !important;
+       overflow: hidden !important;
+       background: var(--color-gray-100) !important;
+       flex-shrink: 0 !important;
+       position: relative !important;
+       border-radius: 8px 8px 0 0 !important;
+   }
+   
+   .h3BreqRip5vgBRyV1wRf.properties-module-active .card-image img {
+       width: 100% !important;
+       height: 100% !important;
+       object-fit: cover !important;
+       display: block !important;
+       transition: transform 0.3s ease !important;
+   }
+   
+   .h3BreqRip5vgBRyV1wRf.properties-module-active .property-card:hover .card-image img {
+       transform: scale(1.05) !important;
+   }
+   
+   .h3BreqRip5vgBRyV1wRf.properties-module-active .card-image .image-fallback {
+       width: 100% !important;
+       height: 100% !important;
+       display: flex !important;
+       flex-direction: column !important;
+       align-items: center !important;
+       justify-content: center !important;
+       gap: 12px !important;
+       background: linear-gradient(135deg, #f5f5f5 0%, #e5e5e5 100%) !important;
+       color: #9CA3AF !important;
+   }
+   
+   .h3BreqRip5vgBRyV1wRf.properties-module-active .card-image .image-fallback i {
+       font-size: 48px !important;
+       opacity: 0.5 !important;
+   }
+   
+   .h3BreqRip5vgBRyV1wRf.properties-module-active .card-image .image-fallback span {
+       font-size: 14px !important;
+       font-weight: 600 !important;
+       text-transform: uppercase !important;
+       letter-spacing: 1px !important;
+   }
+   
+   /* Contenido de card (SOLO en Properties) */
+   .h3BreqRip5vgBRyV1wRf.properties-module-active .card-content {
+       padding: 20px !important;
+       flex-grow: 1 !important;
+       display: flex !important;
+       flex-direction: column !important;
+       gap: 12px !important;
+   }
+   
+   /* Asegurar que los iconos de Font Awesome se muestren (SOLO en Properties) */
+   .h3BreqRip5vgBRyV1wRf.properties-module-active .card-content i.fas,
+   .h3BreqRip5vgBRyV1wRf.properties-module-active .card-content i.fa,
+   .h3BreqRip5vgBRyV1wRf.properties-module-active .card-content i[class*="fa-"] {
+       font-family: "Font Awesome 6 Free" !important;
+       font-weight: 900 !important;
+       display: inline-block !important;
+       font-style: normal !important;
+       font-variant: normal !important;
+       text-rendering: auto !important;
+       line-height: 1 !important;
+   }
+   
+   /* Nombre propiedad (SOLO en Properties) */
+   .h3BreqRip5vgBRyV1wRf.properties-module-active .card-title {
+       font-weight: 700 !important;
+       font-size: 18px !important;
+       color: var(--color-gray-900) !important;
+       margin: 0 0 8px 0 !important;
+       line-height: 1.3 !important;
+       overflow: hidden !important;
+       text-overflow: ellipsis !important;
+       display: -webkit-box !important;
+       -webkit-line-clamp: 2 !important;
+       -webkit-box-orient: vertical !important;
+   }
+   
+   /* Precio (SOLO en Properties) */
+   .h3BreqRip5vgBRyV1wRf.properties-module-active .card-price {
+       font-weight: 700 !important;
+       font-size: 22px !important;
+       color: var(--color-gray-900) !important;
+       margin-bottom: 4px !important;
+   }
+   
+   /* Specs (bedrooms/bathrooms) (SOLO en Properties) */
+   .h3BreqRip5vgBRyV1wRf.properties-module-active .card-specs {
+       display: flex !important;
+       gap: 16px !important;
+       margin: 10px 0 !important;
+       font-size: 14px !important;
+       color: var(--color-gray-700) !important;
+   }
+   
+   .h3BreqRip5vgBRyV1wRf.properties-module-active .card-specs span {
+       display: inline-flex !important;
+       align-items: center !important;
+       gap: 6px !important;
+   }
+   
+   .h3BreqRip5vgBRyV1wRf.properties-module-active .card-specs i.fas,
+   .h3BreqRip5vgBRyV1wRf.properties-module-active .card-specs i.fa {
+       color: var(--color-gray-500) !important;
+       font-size: 14px !important;
+       width: 14px !important;
+       height: 14px !important;
+       display: inline-block !important;
+   }
+   
+   /* Project (SOLO en Properties) */
+   .h3BreqRip5vgBRyV1wRf.properties-module-active .card-project {
+       font-size: 13px !important;
+       color: var(--color-gray-600) !important;
+       margin: 4px 0 !important;
+       font-weight: 500 !important;
+   }
+   
+   /* Owner (SOLO en Properties) */
+   .h3BreqRip5vgBRyV1wRf.properties-module-active .card-owner {
+       font-size: 13px !important;
+       color: var(--color-gray-700) !important;
+       margin: 4px 0 !important;
+       display: flex !important;
+       align-items: center !important;
+       gap: 6px !important;
+   }
+   
+   .h3BreqRip5vgBRyV1wRf.properties-module-active .card-owner i.fas,
+   .h3BreqRip5vgBRyV1wRf.properties-module-active .card-owner i.fa {
+       color: var(--color-gray-500) !important;
+       font-size: 13px !important;
+       width: 13px !important;
+       height: 13px !important;
+       display: inline-block !important;
+       flex-shrink: 0 !important;
+   }
+   
+   /* Building Area (SOLO en Properties) */
+   .h3BreqRip5vgBRyV1wRf.properties-module-active .card-area {
+       font-size: 12px !important;
+       color: var(--color-gray-600) !important;
+       margin-top: 4px !important;
+       line-height: 1.5 !important;
+       overflow: hidden !important;
+       text-overflow: ellipsis !important;
+       display: -webkit-box !important;
+       -webkit-line-clamp: 2 !important;
+       -webkit-box-orient: vertical !important;
+   }
+   
+   /* Status inline (dentro del contenido) */
+   .h3BreqRip5vgBRyV1wRf.properties-module-active .card-status-inline {
+       display: inline-block !important;
+       background: #f0fdf4 !important;
+       color: #166534 !important;
+       padding: 4px 10px !important;
+       border-radius: 4px !important;
+       font-size: 11px !important;
+       font-weight: 600 !important;
+       text-transform: uppercase !important;
+       letter-spacing: 0.5px !important;
+       margin-top: 8px !important;
+   }
+   
+   /* Botón Edit */
+   .h3BreqRip5vgBRyV1wRf.properties-module-active .card-actions {
+       padding: 16px !important;
+       border-top: 1px solid var(--color-gray-200) !important;
+       margin-top: auto !important;
+   }
+   
+   .h3BreqRip5vgBRyV1wRf.properties-module-active .btn-edit {
+       width: 100% !important;
+       padding: 12px !important;
+       border-radius: 6px !important;
+       font-family: 'DM Sans', sans-serif !important;
+       font-weight: 600 !important;
+       font-size: 14px !important;
+       cursor: pointer !important;
+       transition: all 0.2s ease !important;
+       text-align: center !important;
+       background-color: #1a1a1a !important;
+       color: #ffffff !important;
+       border: none !important;
+   }
+   
+   .h3BreqRip5vgBRyV1wRf.properties-module-active .btn-edit:hover {
+       background-color: #000000 !important;
+       transform: translateY(-1px) !important;
+       box-shadow: 0 4px 8px rgba(0,0,0,0.2) !important;
+   }
+   
+   /* Responsive grid columnas */
+   @media (max-width: 1600px) {
+       .h3BreqRip5vgBRyV1wRf.properties-module-active .properties-grid {
+           grid-template-columns: repeat(3, 1fr) !important;
+       }
+   }
+   
+   @media (max-width: 1200px) {
+       .h3BreqRip5vgBRyV1wRf.properties-module-active .properties-grid {
+           grid-template-columns: repeat(2, 1fr) !important;
+       }
+   }
+   
+   @media (max-width: 768px) {
+       .h3BreqRip5vgBRyV1wRf.properties-module-active .properties-grid {
+           grid-template-columns: 1fr !important;
+       }
+   }
+   
+   /* Scrollbar del grid */
+   .h3BreqRip5vgBRyV1wRf.properties-module-active .tabulator-tableHolder::-webkit-scrollbar {
+       width: 8px !important;
+   }
+   
+   .h3BreqRip5vgBRyV1wRf.properties-module-active .tabulator-tableHolder::-webkit-scrollbar-track {
+       background: var(--color-gray-100) !important;
+   }
+   
+   .h3BreqRip5vgBRyV1wRf.properties-module-active .tabulator-tableHolder::-webkit-scrollbar-thumb {
+       background: var(--color-gray-400) !important;
+       border-radius: 4px !important;
+   }
+   
+   .h3BreqRip5vgBRyV1wRf.properties-module-active .tabulator-tableHolder::-webkit-scrollbar-thumb:hover {
+       background: var(--color-taupe) !important;
+   }
+   
+   /* Tipografía global dentro del wrapper */
+   .h3BreqRip5vgBRyV1wRf,
+   .h3BreqRip5vgBRyV1wRf * {
+       font-family: 'DM Sans', sans-serif !important;
+   }
+   
+   /* =======================================================================
+      FIX DE SCROLL EN PANTALLAS PEQUEÑAS
+      ======================================================================= */
+   @media (max-width: 991px) {
+       .h3BreqRip5vgBRyV1wRf.properties-module-active .tabulator-tableHolder {
+           max-height: none !important;
+           height: auto !important;
+           overflow-y: visible !important;
+       }
+   }
+   
+   /* =======================================================================
+      EXTRA: botón para editar relación de Property en Contacts
+      ======================================================================= */
+   .h3BreqRip5vgBRyV1wRf .ora-edit-prop-relation-footer {
+       margin-top: 8px;
+       padding-top: 8px;
+       border-top: 1px dashed var(--color-gray-200);
+       display: flex;
+       justify-content: flex-start;
+   }
+   
+   .h3BreqRip5vgBRyV1wRf .ora-edit-prop-relation-btn {
+       font-family: 'DM Sans', sans-serif;
+       font-size: 11px;
+       font-weight: 500;
+       padding: 4px 8px;
+       border-radius: 999px;
+       border: 1px solid var(--color-taupe);
+       background: #fff;
+       color: var(--color-taupe-dark);
+       cursor: pointer;
+       transition: all 0.15s ease;
+   }
+   
+   .h3BreqRip5vgBRyV1wRf .ora-edit-prop-relation-btn:hover {
+       background: var(--color-taupe);
+       color: #fff;
+   }
+   
+   /* =======================================================================
+      EXTRA: estilo para relation-cards en drawer de Properties
+      ======================================================================= */
+   
+   /* No usamos el wrapper aquí para asegurarnos de que aplica aunque el drawer
+      esté fuera del contenedor principal. */
+   div.ora-prop-relation-card {
+       border-radius: 12px !important;
+       border-width: 1px !important;
+       border-style: solid !important;
+       border-color: var(--color-gray-200) !important;
+       box-shadow: 0 4px 10px rgba(15, 23, 42, 0.06) !important;
+       transition: box-shadow 0.15s ease !important,
+                   transform 0.15s ease !important,
+                   border-color 0.15s ease !important,
+                   background-color 0.15s ease !important;
+       background-color: #ffffff !important;
+   }
+   
+   div.ora-prop-relation-card:hover {
+       border-color: var(--color-taupe) !important;
+       box-shadow: 0 8px 18px rgba(15, 23, 42, 0.12) !important;
+       transform: translateY(-2px) !important;
+       background-color: #fdfbf9 !important;
+   }
+   
+   /* Nombre principal dentro de la relation-card más marcado */
+   div.ora-prop-relation-card p.capitalize.truncate.max-w-full,
+   div.ora-prop-relation-card p.capitalize.truncate {
+       font-weight: 600 !important;
+       color: var(--color-gray-900) !important;
+   }
+   
+   /* =======================================================================
+      ORA WORLD – LEVEL UI (tipo Airbnb / Vercel) PARA RELATED OBJECTS
+      SOLO override sobre .ora-prop-relation-card
+      ======================================================================= */
+   
+   /* BASE: tarjeta flotante muy limpia */
+   div.ora-prop-relation-card {
+     position: relative !important;
+     display: flex !important;
+     flex-direction: column !important;
+     justify-content: space-between !important;
+   
+     border-radius: 20px !important;
+     border: 1px solid rgba(15, 23, 42, 0.06) !important;
+     padding: 18px 22px !important;
+   
+     background: radial-gradient(circle at top left, #F9FAFB 0, #FFFFFF 55%) !important;
+     box-shadow:
+       0 18px 55px rgba(15, 23, 42, 0.16),
+       0 0 0 1px rgba(148, 163, 184, 0.14) !important;
+   
+     transition:
+       box-shadow 0.22s ease !important,
+       transform 0.22s ease !important,
+       border-color 0.22s ease !important,
+       background-position 0.22s ease !important;
+     background-size: 160% 160% !important;
+   }
+   
+   /* Hover general */
+   div.ora-prop-relation-card:hover {
+     border-color: #8B7355 !important;                 /* Warm Taupe ORA */
+     box-shadow:
+       0 26px 70px rgba(15, 23, 42, 0.24),
+       0 0 0 1px rgba(148, 163, 184, 0.25) !important;
+     transform: translateY(-4px) !important;
+     background-position: 8% 0% !important;
+   }
+   
+   /* Tipografía DM Sans en toda la card */
+   div.ora-prop-relation-card * {
+     font-family: 'DM Sans', sans-serif !important;
+   }
+   
+   /* =======================================================================
+      CONTACT CARD
+      (no tiene grid de Value / Status, solo email + phone + Owner)
+      ======================================================================= */
+   
+   div.ora-prop-relation-card:not(:has(div.grid.grid-cols-\[auto_1fr\])) {
+     background: radial-gradient(circle at top left, #F5F5F6 0, #FFFFFF 60%) !important;
+   }
+   
+   /* Header: nombre + avatar + menú */
+   div.ora-prop-relation-card:not(:has(div.grid.grid-cols-\[auto_1fr\])) 
+     > div.flex.items-center.justify-between.gap-5 {
+     align-items: center !important;
+     margin-bottom: 8px !important;
+   }
+   
+   /* Nombre contacto */
+   div.ora-prop-relation-card:not(:has(div.grid.grid-cols-\[auto_1fr\])) 
+     p.capitalize.truncate.max-w-fit {
+     font-weight: 600 !important;
+     font-size: 15px !important;
+     text-transform: none !important;
+     color: #111827 !important;
+   }
+   
+   /* Email y teléfono */
+   div.ora-prop-relation-card:not(:has(div.grid.grid-cols-\[auto_1fr\])) 
+     > div.flex.items-center.gap-1\.5:nth-of-type(2) p,
+   div.ora-prop-relation-card:not(:has(div.grid.grid-cols-\[auto_1fr\])) 
+     > div.flex.items-center.gap-1\.5:nth-of-type(3) p {
+     font-size: 13px !important;
+     color: #4B5563 !important;
+   }
+   
+   /* Botones copy / call minimalistas */
+   div.ora-prop-relation-card:not(:has(div.grid.grid-cols-\[auto_1fr\])) 
+     #copy-action-btn,
+   div.ora-prop-relation-card:not(:has(div.grid.grid-cols-\[auto_1fr\])) 
+     #call-btn {
+     border-radius: 999px !important;
+     border-color: rgba(148, 163, 184, 0.5) !important;
+     background-color: #FFFFFF !important;
+   }
+   div.ora-prop-relation-card:not(:has(div.grid.grid-cols-\[auto_1fr\])) 
+     #copy-action-btn:hover,
+   div.ora-prop-relation-card:not(:has(div.grid.grid-cols-\[auto_1fr\])) 
+     #call-btn:hover {
+     border-color: #8B7355 !important;
+     background-color: #F3F4FF !important;
+   }
+   
+   /* Avatar: halo suave */
+   div.ora-prop-relation-card:not(:has(div.grid.grid-cols-\[auto_1fr\])) 
+     .hr-avatar.bg-primary-50 img {
+     border-radius: 999px !important;
+     box-shadow: 0 0 0 2px #FFFFFF, 0 0 0 4px rgba(139, 115, 85, 0.25) !important;
+   }
+   
+   /* Badge Owner */
+   div.ora-prop-relation-card:not(:has(div.grid.grid-cols-\[auto_1fr\])) 
+     > div.flex.items-center.gap-2.flex-wrap 
+     > div.bg-primary-50.text-primary-700 {
+     background-color: #F3F4F6 !important;
+     color: #111827 !important;
+     border-radius: 999px !important;
+     padding: 4px 14px !important;
+     font-size: 11px !important;
+     font-weight: 500 !important;
+   }
+   
+   /* =======================================================================
+      OPPORTUNITY / DEAL CARD
+      (sí tiene grid Primary Contact / Value / Status)
+      ======================================================================= */
+   
+   div.ora-prop-relation-card:has(div.grid.grid-cols-\[auto_1fr\]) {
+     background: radial-gradient(circle at top left, #F6F7F8 0, #FFFFFF 60%) !important;
+     border-color: rgba(15, 23, 42, 0.10) !important;
+   }
+   
+   /* Pequeña pill de pipeline arriba (- > -) */
+   div.ora-prop-relation-card:has(div.grid.grid-cols-\[auto_1fr\]) 
+     > div.inline-flex.max-w-min.items-center.p-1.bg-gray-100.rounded-sm.gap-1.text-xs.font-normal {
+     background-color: #F3F4F6 !important;
+     border-radius: 999px !important;
+     padding: 3px 8px !important;
+     font-size: 10px !important;
+     color: #6B7280 !important;
+   }
+   
+   /* Header: título + icono / menú */
+   div.ora-prop-relation-card:has(div.grid.grid-cols-\[auto_1fr\]) 
+     > div.flex.items-center.justify-between.gap-5 {
+     align-items: center !important;
+     margin: 8px 0 10px !important;
+   }
+   
+   /* Título deal */
+   div.ora-prop-relation-card:has(div.grid.grid-cols-\[auto_1fr\]) 
+     p.capitalize.truncate.max-w-fit {
+     font-weight: 600 !important;
+     font-size: 15px !important;
+     text-transform: none !important;
+     color: #111827 !important;
+   }
+   
+   /* Iconito redondo de la derecha más suave */
+   div.ora-prop-relation-card:has(div.grid.grid-cols-\[auto_1fr\]) 
+     > div.flex.items-center.justify-between.gap-5 
+     > div.flex.items-center.gap-1\.5 
+     > div > div.w-5.h-5.bg-primary-50 {
+     background-color: #F3F4F6 !important;
+     border-radius: 999px !important;
+   }
+   
+   /* GRID de detalles */
+   div.ora-prop-relation-card:has(div.grid.grid-cols-\[auto_1fr\]) 
+     > div.grid.grid-cols-\[auto_1fr\].gap-y-1.gap-x-3.text-xs.text-gray-700.font-normal.truncate.items-center {
+     margin-top: 2px !important;
+     row-gap: 6px !important;
+   }
+   
+   /* Labels izquierda (PRIMARY CONTACT, VALUE, STATUS) */
+   div.ora-prop-relation-card:has(div.grid.grid-cols-\[auto_1fr\]) 
+     > div.grid.grid-cols-\[auto_1fr\] 
+     > div.text-gray-600.font-medium {
+     font-size: 11px !important;
+     letter-spacing: 0.08em !important;
+     text-transform: uppercase !important;
+     color: #9CA3AF !important;
+     font-weight: 500 !important;
+   }
+   
+   /* Valores derecha (nombre contacto, monto) */
+   div.ora-prop-relation-card:has(div.grid.grid-cols-\[auto_1fr\]) 
+     > div.grid.grid-cols-\[auto_1fr\] 
+     > a.flex.items-center.gap-1.truncate.cursor-pointer,
+   div.ora-prop-relation-card:has(div.grid.grid-cols-\[auto_1fr\]) 
+     > div.grid.grid-cols-\[auto_1fr\] 
+     > div:not(.text-gray-600):not(.hr-tag) {
+     font-size: 13px !important;
+     color: #111827 !important;
+   }
+   
+   /* Avatar BD dentro del grid */
+   div.ora-prop-relation-card:has(div.grid.grid-cols-\[auto_1fr\]) 
+     .hr-avatar.default-avatar {
+     box-shadow: 0 0 0 2px #FFFFFF, 0 0 0 4px rgba(37, 99, 235, 0.16) !important;
+   }
+   
+   /* Status OPEN – pill azul discreta */
+   div.ora-prop-relation-card:has(div.grid.grid-cols-\[auto_1fr\]) 
+     .hr-tag.hr-tag--round.ui-tag.ui-default {
+     background-color: #E5EDFF !important;
+     color: #1E40AF !important;
+     border-radius: 999px !important;
+     border: none !important;
+     padding: 3px 11px !important;
+     font-size: 11px !important;
+     font-weight: 500 !important;
+   }
+   
+   /* Badge Deal – pill negra ORA */
+   div.ora-prop-relation-card:has(div.grid.grid-cols-\[auto_1fr\]) 
+     > div.flex.items-center.gap-2.flex-wrap 
+     > div.bg-primary-50.text-primary-700 {
+     background-color: #111827 !important;
+     color: #FFFFFF !important;
+     border-radius: 999px !important;
+     padding: 4px 14px !important;
+     font-size: 11px !important;
+     font-weight: 500 !important;
+   }
+   
+   /* Margen inferior del grupo de badges */
+   div.ora-prop-relation-card > div.flex.items-center.gap-2.flex-wrap {
+     margin-top: 10px !important;
+   }
+   
+   /* =======================================================================
+      ORA WORLD – FIX ICONOS (Font Awesome / HL Icons / Material)
+      Evitar que DM Sans sobreescriba las fuentes de iconos
+      ======================================================================= */
+   
+   /* Font Awesome 5/6 – íconos sólidos, regulares, brands, etc. */
+   .h3BreqRip5vgBRyV1wRf i.fa,
+   .h3BreqRip5vgBRyV1wRf i.fas,
+   .h3BreqRip5vgBRyV1wRf i.far,
+   .h3BreqRip5vgBRyV1wRf i.fal,
+   .h3BreqRip5vgBRyV1wRf i.fab,
+   .h3BreqRip5vgBRyV1wRf i.fa-solid,
+   .h3BreqRip5vgBRyV1wRf i.fa-regular,
+   .h3BreqRip5vgBRyV1wRf i.fa-light,
+   .h3BreqRip5vgBRyV1wRf i.fa-brands {
+     font-family: "Font Awesome 6 Free", "Font Awesome 5 Free",
+                  "Font Awesome 6 Pro", "Font Awesome 5 Pro",
+                  "Font Awesome", system-ui, sans-serif !important;
+     font-weight: 900 !important; /* la mayoría de íconos en GHL son solid */
+   }
+   
+   /* En algunos casos GHL usa <i class="fa ..."> sin fas/far: forcemos también */
+   .h3BreqRip5vgBRyV1wRf i.fa[class*="fa-"]::before,
+   .h3BreqRip5vgBRyV1wRf i.fa[class*="fa-"] {
+     font-family: "Font Awesome 6 Free", "Font Awesome 5 Free",
+                  "Font Awesome 6 Pro", "Font Awesome 5 Pro",
+                  "Font Awesome", system-ui, sans-serif !important;
+   }
+   
+   /* Iconos propios de HighLevel (clases hl-icon-...) */
+   .h3BreqRip5vgBRyV1wRf [class^="hl-icon-"],
+   .h3BreqRip5vgBRyV1wRf [class*=" hl-icon-"] {
+     font-family: inherit !important; /* dejan usar la fuente definida por la app */
+   }
+   
+   /* Material Icons / Symbols (por si GHL los usa en alguna parte) */
+   .h3BreqRip5vgBRyV1wRf i.material-icons,
+   .h3BreqRip5vgBRyV1wRf i[class^="material-icons"],
+   .h3BreqRip5vgBRyV1wRf i[class*=" material-icons"],
+   .h3BreqRip5vgBRyV1wRf .material-symbols-outlined,
+   .h3BreqRip5vgBRyV1wRf .material-symbols-rounded,
+   .h3BreqRip5vgBRyV1wRf .material-symbols-sharp {
+     font-family: "Material Icons", "Material Symbols Outlined",
+                  "Material Symbols Rounded", "Material Symbols Sharp",
+                  system-ui, sans-serif !important;
+     font-feature-settings: "liga" 1 !important;
+   }
+   
+   /* =======================================================================
+      FIX: Scroll suave y prevención de saltos en el grid de properties
+      ======================================================================= */
+   
+   . h3BreqRip5vgBRyV1wRf. properties-module-active . properties-grid {
+       scroll-behavior: smooth ! important;
+       contain: layout style ! important;
+       will-change: contents !important;
+   }
+   
+   . h3BreqRip5vgBRyV1wRf.properties-module-active .tabulator-tableHolder {
+       contain: strict !important;
+       overflow-anchor: auto !important;
+   }
